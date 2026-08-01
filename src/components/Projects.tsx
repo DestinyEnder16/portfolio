@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
     title: 'MapWorkout',
     desc: 'A web app for tracking daily running and cycling workouts on an interactive map. Drop a pin where you exercise, log the activity, and see your workout history with calories burned automatically calculated from your weight and duration.',
     tags: ['HTML5', 'CSS3', 'JavaScript', 'Leaflet'],
-    live: null,
+    live: 'https://webcoder-mapworkout-v2.netlify.app/app',
     source: 'https://github.com/DestinyEnder16/web-workout-tracker',
   },
   {
