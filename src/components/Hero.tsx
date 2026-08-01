@@ -57,11 +57,6 @@ export default function Hero() {
       <ParticleCanvas />
 
       <div className="hero-content">
-        <div className="hero-badge">
-          <span className="hero-badge-dot" aria-hidden="true" />
-          Open to opportunities
-        </div>
-
         <span className="hero-eyebrow">// Hello, World!</span>
 
         <h1 className="hero-name">
