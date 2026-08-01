@@ -21,11 +21,11 @@ const PROJECTS: Project[] = [
   },
   {
     num: '02',
-    title: 'Finaze Web App',
-    desc: 'A personal finance web application that helps users track spending and manage their budgets. Features a modern dashboard with intuitive navigation.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'Netlify'],
-    live: 'https://webcoder-finaze-application.netlify.app/',
-    source: null,
+    title: 'MapWorkout',
+    desc: 'A web app for tracking daily running and cycling workouts on an interactive map. Drop a pin where you exercise, log the activity, and see your workout history with calories burned automatically calculated from your weight and duration.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Leaflet'],
+    live: null,
+    source: 'https://github.com/DestinyEnder16/web-workout-tracker',
   },
   {
     num: '03',

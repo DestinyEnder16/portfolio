@@ -30,7 +30,7 @@ export default function Footer() {
           Destiny
           <span className="fb">/&gt;</span>
         </div>
-        <p className="footer-tag">// Mobile Developer &amp; ML Enthusiast</p>
+        <p className="footer-tag">// Mobile &amp; Front-end Developer</p>
 
         <div className="footer-socials">
           <a
