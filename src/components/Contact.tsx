@@ -209,7 +209,7 @@ export default function Contact() {
             <div className={`contact-gh-stats reveal reveal-d2${visible ? ' visible' : ''}`}>
               <p className="gh-stats-label">// github contributions</p>
               <img
-                src="https://ghchart.rshah.org/7c3aed/DestinyEnder16"
+                src="https://ghchart.rshah.org/2026/7c3aed/DestinyEnder16"
                 alt="GitHub contribution graph for DestinyEnder16"
                 className="gh-stats-img"
                 loading="lazy"
