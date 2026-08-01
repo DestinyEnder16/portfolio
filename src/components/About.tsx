@@ -22,9 +22,9 @@ export default function About() {
 
             <p>
               Hi, I&apos;m <span className="text-accent">Israel Destiny</span> — a Mobile
-              Developer from Lagos, Nigeria, specializing in React Native and cross-platform
-              apps. I also bring strong frontend engineering and data science skills to the
-              table.
+              and Front-end Developer from Lagos, Nigeria, specializing in React Native,
+              cross-platform apps, and modern web interfaces. I also bring strong data
+              science skills to the table.
             </p>
             <p>
               I&apos;m currently in the <span className="text-accent">Mobile Track at Rise
