@@ -9,9 +9,9 @@ interface Particle {
   alpha: number
 }
 
-const R = 249
-const G = 115
-const B = 22
+const R = 124
+const G = 58
+const B = 237
 const COUNT = 60
 const LINK_DIST = 110
 
