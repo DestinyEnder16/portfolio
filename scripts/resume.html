@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --accent: #ea580c;
+    --accent-light: #f97316;
+    --text: #1c1917;
+    --muted: #57534e;
+    --dim: #a8a29e;
+    --line: #e7e5e4;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    font-size: 10.5px;
+    line-height: 1.5;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 18mm 16mm;
+    background: #fff;
+  }
+
+  .header {
+    border-bottom: 2.5px solid var(--accent);
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+
+  .name .bracket { color: var(--accent); }
+
+  .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin-top: 12px;
+    font-size: 10px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .contact a { color: var(--muted); text-decoration: none; }
+  .contact span.sep { color: var(--dim); }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 26px;
+  }
+
+  .section { margin-bottom: 16px; break-inside: avoid; }
+
+  .section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .section-title::before { content: '//'; color: var(--dim); }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .summary { font-size: 10.5px; color: var(--muted); line-height: 1.65; }
+
+  .item { margin-bottom: 12px; }
+  .item:last-child { margin-bottom: 0; }
+
+  .item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .item-title { font-size: 11.5px; font-weight: 700; }
+  .item-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5px;
+    color: var(--dim);
+    white-space: nowrap;
+  }
+  .item-org {
+    font-size: 10px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  .item-desc { font-size: 9.5px; color: var(--muted); line-height: 1.55; }
+
+  .skills-block { margin-bottom: 10px; }
+  .skills-label {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 5px;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5px;
+    color: var(--accent);
+    background: rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.22);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .proj-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5px;
+    color: var(--accent-light);
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .full { grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="name"><span class="bracket">&lt;</span>Israel Destiny<span class="bracket">/&gt;</span></div>
+    <div class="role">Mobile Developer &middot; React Native</div>
+    <div class="contact">
+      <a href="mailto:destinyprogrammer06@gmail.com">destinyprogrammer06@gmail.com</a>
+      <span class="sep">|</span>
+      <span>+234 815 321 0993</span>
+      <span class="sep">|</span>
+      <span>Lagos, Nigeria</span>
+      <span class="sep">|</span>
+      <a href="https://github.com/DestinyEnder16">github.com/DestinyEnder16</a>
+      <span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/destiny-israel/">linkedin.com/in/destiny-israel</a>
+    </div>
+  </div>
+
+  <div class="section full">
+    <div class="section-title">Summary</div>
+    <p class="summary">
+      Mobile Developer specializing in React Native and cross-platform app development, with a strong
+      frontend engineering foundation and applied data science skills. Currently in the Mobile Track at
+      Rise Academy (Risevest) and pursuing a B.Sc. in Statistics at the University of Lagos &mdash; combining
+      mathematical depth with hands-on engineering to build practical, real-world software.
+    </p>
+  </div>
+
+  <div class="layout">
+    <div class="col-left">
+
+      <div class="section">
+        <div class="section-title">Experience &amp; Training</div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Mobile Track &mdash; Rise Academy</div>
+            <div class="item-date">Jan &ndash; Dec 2026</div>
+          </div>
+          <div class="item-org">Risevest</div>
+          <div class="item-desc">
+            Selected for Rise Academy, a free intensive program by Risevest. Building production-quality
+            cross-platform mobile apps with React Native in the Mobile Development track.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Scholarship Recipient</div>
+            <div class="item-date">Sept 2025 &ndash; Present</div>
+          </div>
+          <div class="item-org">Cedars Productivity Center</div>
+          <div class="item-desc">
+            Awarded full access to DataCamp&rsquo;s data science and analytics curriculum; completing tracks
+            in Python, Data Science, and Machine Learning.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">B.Sc. Statistics</div>
+            <div class="item-date">Oct 2023 &ndash; Present</div>
+          </div>
+          <div class="item-org">University of Lagos</div>
+          <div class="item-desc">
+            Coursework: Probability Theory, Non-parametric Analysis, Statistical Methods, Linear Algebra.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Supervised Machine Learning</div>
+          </div>
+          <div class="item-org">Coursera &mdash; Dr. Andrew Ng</div>
+          <div class="item-desc">Regression, classification, gradient descent, and neural network fundamentals.</div>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Responsive Web Design</div>
+          </div>
+          <div class="item-org">Udemy</div>
+          <div class="item-desc">Semantic HTML5, modern CSS3, Flexbox, Grid, responsive patterns.</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-right">
+
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills-block">
+          <div class="skills-label">Mobile</div>
+          <div class="tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">Redux Toolkit</span>
+            <span class="tag">Kotlin</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-label">Frontend</div>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-label">ML &amp; Data Science</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-label">Tools</div>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="item">
+          <div class="item-title">CryptoApp (tMinus1)</div>
+          <div class="item-desc">
+            React Native app to track crypto assets in real time. Expo SDK 54, Expo Router, Redux Toolkit / RTK Query.
+          </div>
+          <a class="proj-link" href="https://github.com/DestinyEnder16/cryptoApp">github.com/DestinyEnder16/cryptoApp</a>
+        </div>
+        <div class="item">
+          <div class="item-title">Crime Data Analysis &mdash; LA</div>
+          <div class="item-desc">
+            Exploratory data analysis of Los Angeles crime incidents using pandas, seaborn, and matplotlib.
+          </div>
+          <a class="proj-link" href="https://github.com/DestinyEnder16/Crime-data-analysis">github.com/DestinyEnder16/Crime-data-analysis</a>
+        </div>
+        <div class="item">
+          <div class="item-title">Finaze Web App</div>
+          <div class="item-desc">Personal finance web app for tracking spending and budgets with a modern dashboard.</div>
+          <a class="proj-link" href="https://webcoder-finaze-application.netlify.app/">webcoder-finaze-application.netlify.app</a>
+        </div>
+        <div class="item">
+          <div class="item-title">Quiz Game</div>
+          <div class="item-desc">Interactive quiz app with categories and scoring, built in vanilla JavaScript.</div>
+          <a class="proj-link" href="https://quiz-game-ruddy-nine.vercel.app/">quiz-game-ruddy-nine.vercel.app</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

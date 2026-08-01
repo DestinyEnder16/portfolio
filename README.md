@@ -1,32 +1,59 @@
-# React + TypeScript + Vite
+# Israel Destiny — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive developer portfolio built with React, TypeScript, and Vite.
+Features a light amber theme, developer-themed accents (terminal/code aesthetics),
+and subtle motion — a typewriter hero, an animated particle field, and
+scroll-reveal animations throughout.
 
-Currently, two official plugins are available:
+**Mobile Developer · React Native** — with a frontend engineering foundation and
+applied data science skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Hero** — typewriter role animation over a canvas particle field, with an
+  "open to opportunities" status badge
+- **About** — bio alongside an `about_me.json` code window
+- **Skills** — interactive tabbed panel with animated proficiency bars
+- **Projects** — mobile, web, and data-science work
+- **Experience** — vertical timeline of training, education, and certifications
+- **Contact** — form that opens a pre-filled email, quick-copy email, social
+  links, and a live GitHub contribution graph
+- **Resume** — downloadable PDF, generated from an editable HTML source
+- Fully responsive with a mobile navigation menu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+- **React 19** + **TypeScript**
+- **Vite** for dev/build tooling
+- Plain **CSS** with custom properties (design tokens) — no UI framework
+- **Canvas API** for the particle field · **IntersectionObserver** for scroll reveals
+- **Oxlint** for linting
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🚀 Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install      # install dependencies
+npm run dev      # start the dev server
+npm run build    # type-check and build for production
+npm run preview  # preview the production build
+npm run lint     # run oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 📄 Resume
+
+The resume PDF at `public/resume.pdf` is generated from `scripts/resume.html`.
+To edit it, update the HTML and regenerate:
+
+```bash
+npm run resume
+```
+
+## 📬 Contact
+
+- **Email:** destinyprogrammer06@gmail.com
+- **GitHub:** [DestinyEnder16](https://github.com/DestinyEnder16)
+- **LinkedIn:** [destiny-israel](https://www.linkedin.com/in/destiny-israel/)
+
+---
+
+Designed & built by Israel Destiny.
